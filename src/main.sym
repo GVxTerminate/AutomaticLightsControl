@@ -1,0 +1,122 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+005     MAIN.hr
+006     MAIN.min
+007     MAIN.sec
+008     lcd_init.i
+008     @PRINTF_D_134.P1
+008     rtc_init.x
+008     rtc_get_time.@SCRATCH1
+009     write_ds1302.cmd
+009     @PRINTF_D_134.P1
+009     rtc_init.@SCRATCH1
+009     lcd_init.@SCRATCH1
+00A     write_ds1302.data
+00A     @PRINTF_D_134.@SCRATCH1
+00B     read_ds1302.cmd
+00B     @PRINTF_D_134.@SCRATCH2
+00C     rm_bcd.data
+00C     read_ds1302.i
+00C     @PRINTF_D_134.@SCRATCH3
+00D     read_ds1302.data
+00D     rm_bcd.i
+00D     @PRINTF_D_134.@SCRATCH4
+00E     lcd_putc.c
+00E     write_ds1302_byte.cmd
+00E     @DIV88.P1
+00E     rm_bcd.@SCRATCH1
+00F     @delay_ms1.P1
+00F     write_ds1302_byte.i
+00F     @DIV88.P1
+00F     lcd_gotoxy.x
+010     lcd_gotoxy.y
+010     @DIV88.@SCRATCH1
+011     lcd_gotoxy.address
+012     lcd_gotoxy.@SCRATCH1
+013     lcd_send_byte.address
+014     lcd_send_byte.n
+015     lcd_read_byte.low
+015     lcd_send_byte.@SCRATCH1
+016     lcd_read_byte.high
+016     lcd_send_nibble.n
+017     lcd_read_nibble.n
+017     lcd_read_byte.@SCRATCH1
+018     lcd_read_nibble.@SCRATCH1
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+00C8  @delay_ms1
+0018  write_ds1302_byte
+003C  write_ds1302
+0052  read_ds1302
+0090  rtc_init
+029C  @DIV88
+026E  rm_bcd
+046E  rtc_get_time
+0004  LCD_INIT_STRING
+0180  lcd_read_byte
+012E  lcd_read_nibble
+00F0  lcd_send_nibble
+01CA  lcd_send_byte
+0210  lcd_init
+02C4  lcd_gotoxy
+02E6  lcd_putc
+0400  MAIN
+0338  @PRINTF_D_134
+0400  @cinit
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    E:\Src\v1.0\
+
+Project Files:
+    main.c
+    main.h
+    C:\Program Files\PICC\devices\18F4550.h
+    C:\Program Files\PICC\drivers\DS1302.C
+    C:\Program Files\PICC\drivers\LCD.C
+
+Units:
+    E:\Src\v1.0\main (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.PJT
+    Call Tree:   main.tre
+    Statistics:  main.sta
