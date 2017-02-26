@@ -30,9 +30,9 @@
 
 #ifndef RTC_SCLK
 
-#define RTC_SCLK PIN_B1
-#define RTC_IO   PIN_B3
-#define RTC_RST  PIN_B2
+#define RTC_SCLK PIN_A0
+#define RTC_IO   PIN_A2
+#define RTC_RST  PIN_A1
 
 #endif
 

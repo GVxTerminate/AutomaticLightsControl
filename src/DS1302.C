@@ -30,9 +30,9 @@
 
 #ifndef RTC_SCLK
 
-#define RTC_SCLK PIN_A0
+#define RTC_SCLK PIN_A1
 #define RTC_IO   PIN_A2
-#define RTC_RST  PIN_A1
+#define RTC_RST  PIN_A0
 
 #endif
 
@@ -118,21 +118,6 @@ void rtc_set_datetime(BYTE day, BYTE mth, BYTE year, BYTE dow, BYTE hr, BYTE min
    write_ds1302(0x84,get_bcd(hr));
    write_ds1302(0x82,get_bcd(min));
    write_ds1302(0x80,get_bcd(0));
-}
-
-void rtc_set_time(BYTE hr, BYTE min)
-{
-   write_ds1302(0x84,get_bcd(hr));
-   write_ds1302(0x82,get_bcd(min));
-   write_ds1302(0x80,get_bcd(0));
-}
-
-void rtc_set_date(BYTE day, BYTE mth, BYTE year, BYTE dow)
-{
-   write_ds1302(0x86,get_bcd(day));
-   write_ds1302(0x88,get_bcd(mth));
-   write_ds1302(0x8c,get_bcd(year));
-   write_ds1302(0x8a,get_bcd(dow));
 }
 
 void rtc_get_date(BYTE& day, BYTE& mth, BYTE& year, BYTE& dow) {
