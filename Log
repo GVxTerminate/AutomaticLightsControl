@@ -2,3 +2,9 @@ Lunes 20/02/17:
   -Descarga y confuguración de Proteus y PIC C Compiler, investigación sobre MPLAB X IDE XC8.
   -Busqueda de diseños previos de tarjeta de control. 
   -Repaso programación PICS.
+miercoles 22/02/17:
+  -Prueba de programacion de modulos lcd ds1302 keypad.
+viernes 24/02/17:
+  -Inicio de programacion de sistema de luces.
+Sabado 25/02/17:
+  -Avance en programacion de sistema.(menus finalizados, config hora realizada).
