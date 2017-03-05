@@ -1,3 +1,2 @@
->>> Warning 202 "E:\project\Src\v1.0\menu.c" Line 104(15,22): Variable never used:   message
-      Memory usage:   ROM=11%      RAM=0% - 2%
-      0 Errors,  1 Warnings.
+      Memory usage:   ROM=41%      RAM=0% - 7%
+      0 Errors,  0 Warnings.

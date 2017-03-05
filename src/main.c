@@ -1,5 +1,5 @@
 #include <main.h>
-#include <DS1302.C>
+#include "DS1302.C"
 #include <Flex_KBD.c>
 
 //LCD Module Connections
@@ -30,7 +30,7 @@ void main()
    kbd_init();
    rtc_init();
    lcd_init();
-
+   Week schedule;
    BYTE hour,min,sec;
    BYTE day,month,year,dow;
  
@@ -49,7 +49,7 @@ void main()
       
       if (kbd_getc() !='\0') 
       {
-         menu();
+         menu(schedule);
          clean(2);
       }
     }

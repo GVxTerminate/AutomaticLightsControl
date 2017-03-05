@@ -30,7 +30,7 @@ void main()
    kbd_init();
    rtc_init();
    lcd_init();
-
+   Week schedule;
    BYTE hour,min,sec;
    BYTE day,month,year,dow;
  
@@ -47,7 +47,11 @@ void main()
       showDate (day, month, year, dow);     
       printf(lcd_putc, "\a");
       
-      if (kbd_getc() !='\0') menu();
+      if (kbd_getc() !='\0') 
+      {
+         menu(schedule);
+         clean(2);
+      }
     }
 
 }
