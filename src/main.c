@@ -33,7 +33,7 @@ void main()
    Week schedule;
    BYTE hour,min,sec;
    BYTE day,month,year,dow;
- 
+   dataLoad(1,&schedule);
     while(true)
     {
       /// Obtain time from ds1302

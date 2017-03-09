@@ -1,5 +1,5 @@
 #include <main.h>
-#include <DS1302.C>
+#include "DS1302.C"
 #include <Flex_KBD.c>
 
 //LCD Module Connections
@@ -33,7 +33,7 @@ void main()
    Week schedule;
    BYTE hour,min,sec;
    BYTE day,month,year,dow;
- 
+   bdataLoad(1,&schedule);
     while(true)
     {
       /// Obtain time from ds1302

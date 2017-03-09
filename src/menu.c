@@ -98,7 +98,8 @@ void getHour(char message[],BYTE& hr, BYTE& min)
    clean(2);
    printf (lcd_putc,"\a%s",message);
    lcd_gotoxy (5,2);
-   printf (lcd_putc,"HH:MM");
+   if(hr==0 && min == 0)printf (lcd_putc,"HH:MM");
+   else printf (lcd_putc,"%02d:%02d",hr,min);
    do
    {
       con = kbd_getc();
@@ -387,7 +388,8 @@ void configOnOff(Week& schedule)
          break;
       }
       }
-   }  
+   }
+   eepromLoad(1,&schedule);
 }
 
 void menu(Week& schedule)

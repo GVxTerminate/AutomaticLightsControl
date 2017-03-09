@@ -1,26 +1,26 @@
 
-ROM used: 13554 (41%)
-          13554 (41%) including unused fragments
+ROM used: 14382 (44%)
+          14382 (44%) including unused fragments
 
-          8 Average locations per line
-          24 Average locations per statement
+          9 Average locations per line
+          26 Average locations per statement
 
 RAM used: 9 (0%) at main() level
-          149 (7%) worst case
+          152 (7%) worst case
 
 Stack used: 8 worst case (out of 31 total available)
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   58    27   5  main.c
+   58    28   5  main.c
    39     0   0  main.h
   458     0   0  C:\Program Files\PICC\devices\18F4550.h
   156    60  11  DS1302.C
   105    45   8  Flex_KBD.c
   408    88  16  C:\Program Files\PICC\drivers\LCD.C
-  434   338  61  menu.c
+  436   341  61  menu.c
 ----- -----
- 1658   558 Total
+ 1660   562 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
@@ -32,7 +32,7 @@ Page ROM  %  RAM   Vol Diff  Functions:
 0     40   0   4   160  5.0  get_bcd
 0     40   0   3             @DIV88
 0     46   0   3   160  4.2  rm_bcd
-0     86   0   5   214  2.1  rtc_set_date
+0     92   0   5   214  2.1  rtc_set_date
 0     62   0   3   136  1.9  rtc_set_time
  Inline        5   238  3.1  rtc_get_date
  Inline        4   170  3.0  rtc_get_time
@@ -52,10 +52,12 @@ Page ROM  %  RAM   Vol Diff  Functions:
 0     18   0   0             @const179
 0     32   0   2             @PSTRINGC_154
 0     18   0   0             @const181
+0     96   0   8   209  5.3  eepromLoad
+0     72   0  10   209  5.3  dataLoad
  Inline        7   280  6.3  concatenateAtoi
 0     46   0   3    88  2.0  showHour
-0    200   1   6   822  4.0  @PRINTF_D_154
-0    426   2   4   822  4.0  showDate
+0    200   1   6             @PRINTF_D_154
+0    426   1   4   822  4.0  showDate
 0     20   0   0             @const212
 0     30   0   3             @PSTRINGCN_154
 0     20   0   0             @const215
@@ -63,56 +65,56 @@ Page ROM  %  RAM   Vol Diff  Functions:
 0     20   0   0             @const217
 0     20   0   0             @const218
 0     20   0   0             @const219
-0     20   0   0  2633  8.6  @const220
-0     40   0   0  2633  8.6  @goto10396
- Inline       10  2633  8.6  getHour
+0     20   0   0             @const220
+0     40   0   0             @goto10396
+ Inline       10  2812  9.1  getHour
 0     36   0   2             @PSTRINGR_154
 0      6   0   0             @const231
-0      8   0   0             @const232
+0      8   0   0             @const233
  Inline       10  5548 11.1  getDate
-0     12   0   0             @const245
 0     12   0   0             @const246
-0     14   0   0             @const247
+0     12   0   0             @const247
 0     14   0   0             @const248
-0     16   0   0             @const249
-0   1932   7   8  1588  8.0  configClock
-0     14   0   0             @const261
-0     16   0   0             @const264
-0     16   0   0  5652  9.0  @const266
-0      8   0   0  5652  9.0  @const267
- Inline       51  5652  9.0  configOnOff
-0     14   0   0             @const273
-0     10   0   0             @const275
+0     14   0   0             @const249
+0     16   0   0             @const250
+0   1970   7   8  1588  8.0  configClock
+0     14   0   0             @const262
+0     16   0   0             @const265
+0     16   0   0             @const267
+0      8   0   0             @const268
+ Inline       51  5719  9.0  configOnOff
+0     14   0   0             @const274
 0     10   0   0             @const276
-0     14   0   0             @const277
-0     10   0   0             @const278
-0     12   0   0             @const279
-0     10   0   0             @const280
-0     12   0   0  1135  7.7  @const281
-0     16   0   0  1135  7.7  @const282
+0     10   0   0             @const277
+0     14   0   0             @const278
+0     10   0   0             @const279
+0     12   0   0             @const280
+0     10   0   0             @const281
+0     12   0   0             @const282
+0     16   0   0             @const283
  Inline       28  1135  7.7  menu
-0     14   0   0             @const286
-0     16   0   0             @const288
-0     18   0   0   960  3.9  @const289
-0      8   0   0   960  3.9  @const290
-0   8988  33   1   960  3.9  MAIN
+0     14   0   0             @const287
+0     16   0   0             @const289
+0     18   0   0             @const290
+0      8   0   0             @const291
+0   9604  33   1  1015  4.4  MAIN
 
 Program metrics:
-    Functions               39
-    Statements              558
+    Functions               32
+    Statements              562
     Comments                247
-    Volume (V)              76883
-    Difficilty (D)          200.3
-    Effort to implement (E) 15403091
-    Time to implement (T)   237 hours, 42 minutes
-    Est Delivered Bugs (B)  21
-    Cyclomatic Complexity   227
-    Maintainability (MI)    53
+    Volume (V)              42116
+    Difficilty (D)          147.5
+    Effort to implement (E) 6213470
+    Time to implement (T)   95 hours, 53 minutes
+    Est Delivered Bugs (B)  11
+    Cyclomatic Complexity   121
+    Maintainability (MI)    40
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00002     4  0  
-00004-07FFE  13550  19214  
+00004-07FFE  14378  18386  
 
 
 
