@@ -8,3 +8,5 @@ viernes 24/02/17:
   -Inicio de programacion de sistema de luces.
 Sabado 25/02/17:
   -Avance en programacion de sistema.(menus finalizados, config hora realizada).
+Miercoles 08/03/2017:
+  -finalizado carga de eeprom, detectado error de diseño(falta estructura de circuitos, por integrar).
