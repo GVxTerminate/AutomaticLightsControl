@@ -25,8 +25,8 @@ Count=1
 2=menu.c
 3=Flex_KBD.c
 4=DS1302.C
-5=
-6=C:\Program Files\PICC\drivers\LCD.C
+5=flexlcd.c
+6=
 7=C:\Program Files\PICC\devices\18F4550.h
 8=
 [E:\project\Src\v1.0\main]
