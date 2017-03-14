@@ -9,4 +9,10 @@ viernes 24/02/17:
 Sabado 25/02/17:
   -Avance en programacion de sistema.(menus finalizados, config hora realizada).
 Miercoles 08/03/2017:
-  -finalizado carga de eeprom, detectado error de diseño(falta estructura de circuitos, por integrar).
+  -Finalizado carga de eeprom, detectado error de diseño(falta estructura de circuitos, por integrar).
+Viernes 10/03/17:
+  -Prueba de tarjeta EasyPic(blink, LCD, port outputs) LCD driver sin funcionamiento.
+Lunes 13/03/17:
+  -Prueba tarjeta Easypic(LCD,ds1302) solucionado problema con driver LCD, cambio de biblioteca LCD.
+  -ds1302 en correcto funcionamiento.
+  -Prueba de integracion de LCD, ds1302 con codigo V1.1 (exitosa).
