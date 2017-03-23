@@ -16,3 +16,9 @@ Lunes 13/03/17:
   -Prueba tarjeta Easypic(LCD,ds1302) solucionado problema con driver LCD, cambio de biblioteca LCD.
   -ds1302 en correcto funcionamiento.
   -Prueba de integracion de LCD, ds1302 con codigo V1.1 (exitosa).
+Viernes 17/03/17:
+  -Pruebas de Keypad 4*4 en tarjeta easypic, fallas al leer estado del teclado, la causa: micro funcionando a baja velocidad
+  -Prueba modulo rele, correcto funcionamiento.
+Lunes 20/03/17:
+  -solventado problema con keypad.
+  -Inicio de diseño pcb en eagle.
