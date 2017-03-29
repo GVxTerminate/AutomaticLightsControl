@@ -20,5 +20,10 @@ Viernes 17/03/17:
   -Pruebas de Keypad 4*4 en tarjeta easypic, fallas al leer estado del teclado, la causa: micro funcionando a baja velocidad
   -Prueba modulo rele, correcto funcionamiento.
 Lunes 20/03/17:
-  -solventado problema con keypad.
+  -Solventado problema con keypad.
   -Inicio de diseño pcb en eagle.
+Viernes 24/03/17:
+  -Finalizado el diseño de circuito esquematico.
+  -Iniciado el diseño PCB.
+Martes 28/03/17:
+  -Avances en diseño PCB.
